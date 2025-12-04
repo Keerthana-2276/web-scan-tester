@@ -1,0 +1,892 @@
+<!doctype html><html><head><meta charset='utf-8'><title>SQL Findings Report</title></head><body>
+<h1>SQL Findings Report</h1>
+<p>Total distinct findings: 80</p>
+<table border='1' cellpadding='6' cellspacing='0'>
+<tr><th>Score</th><th>Count</th><th>URL</th><th>Param/Field</th><th>Payload</th><th>Status</th><th>Error</th><th>Reflected</th><th>RelChange</th></tr>
+<tr>
+<td>78</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/sqli/' target='_blank'>http://localhost:8080/vulnerabilities/sqli/</a></td>
+<td>id</td>
+<td><code>&#x27; OR &#x27;1&#x27;=&#x27;1&#x27; /*</code></td>
+<td>200</td>
+<td>Yes</td>
+<td>No</td>
+<td>0.96</td>
+</tr>
+<tr>
+<td>78</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/sqli/' target='_blank'>http://localhost:8080/vulnerabilities/sqli/</a></td>
+<td>ALL_FIELDS</td>
+<td><code>&#x27; OR &#x27;1&#x27;=&#x27;1&#x27; /*</code></td>
+<td>200</td>
+<td>Yes</td>
+<td>No</td>
+<td>0.96</td>
+</tr>
+<tr>
+<td>78</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/sqli/' target='_blank'>http://localhost:8080/vulnerabilities/sqli/</a></td>
+<td>id</td>
+<td><code>&#x27;;--</code></td>
+<td>200</td>
+<td>Yes</td>
+<td>No</td>
+<td>0.96</td>
+</tr>
+<tr>
+<td>78</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/sqli/' target='_blank'>http://localhost:8080/vulnerabilities/sqli/</a></td>
+<td>ALL_FIELDS</td>
+<td><code>&#x27;;--</code></td>
+<td>200</td>
+<td>Yes</td>
+<td>No</td>
+<td>0.96</td>
+</tr>
+<tr>
+<td>78</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/brute/' target='_blank'>http://localhost:8080/vulnerabilities/brute/</a></td>
+<td>username</td>
+<td><code>&#x27; OR &#x27;1&#x27;=&#x27;1&#x27; /*</code></td>
+<td>200</td>
+<td>Yes</td>
+<td>No</td>
+<td>0.95</td>
+</tr>
+<tr>
+<td>78</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/brute/' target='_blank'>http://localhost:8080/vulnerabilities/brute/</a></td>
+<td>ALL_FIELDS</td>
+<td><code>&#x27; OR &#x27;1&#x27;=&#x27;1&#x27; /*</code></td>
+<td>200</td>
+<td>Yes</td>
+<td>No</td>
+<td>0.95</td>
+</tr>
+<tr>
+<td>78</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/brute/' target='_blank'>http://localhost:8080/vulnerabilities/brute/</a></td>
+<td>username</td>
+<td><code>&#x27;;--</code></td>
+<td>200</td>
+<td>Yes</td>
+<td>No</td>
+<td>0.95</td>
+</tr>
+<tr>
+<td>78</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/brute/' target='_blank'>http://localhost:8080/vulnerabilities/brute/</a></td>
+<td>ALL_FIELDS</td>
+<td><code>&#x27;;--</code></td>
+<td>200</td>
+<td>Yes</td>
+<td>No</td>
+<td>0.95</td>
+</tr>
+<tr>
+<td>30</td>
+<td>4</td>
+<td><a href='http://localhost:8080/instructions.php?doc=%27+OR+%271%27%3D%271' target='_blank'>http://localhost:8080/instructions.php?doc=%27+OR+%271%27%3D%271</a></td>
+<td>doc</td>
+<td><code>&#x27; OR &#x27;1&#x27;=&#x27;1</code></td>
+<td>200</td>
+<td>No</td>
+<td>No</td>
+<td>5.98</td>
+</tr>
+<tr>
+<td>30</td>
+<td>4</td>
+<td><a href='http://localhost:8080/instructions.php?doc=%22+OR+%221%22%3D%221' target='_blank'>http://localhost:8080/instructions.php?doc=%22+OR+%221%22%3D%221</a></td>
+<td>doc</td>
+<td><code>&quot; OR &quot;1&quot;=&quot;1</code></td>
+<td>200</td>
+<td>No</td>
+<td>No</td>
+<td>5.98</td>
+</tr>
+<tr>
+<td>30</td>
+<td>4</td>
+<td><a href='http://localhost:8080/instructions.php?doc=%27+OR+1%3D1+--+' target='_blank'>http://localhost:8080/instructions.php?doc=%27+OR+1%3D1+--+</a></td>
+<td>doc</td>
+<td><code>&#x27; OR 1=1 -- </code></td>
+<td>200</td>
+<td>No</td>
+<td>No</td>
+<td>5.98</td>
+</tr>
+<tr>
+<td>30</td>
+<td>4</td>
+<td><a href='http://localhost:8080/instructions.php?doc=%27+OR+%271%27%3D%271%27+--+' target='_blank'>http://localhost:8080/instructions.php?doc=%27+OR+%271%27%3D%271%27+--+</a></td>
+<td>doc</td>
+<td><code>&#x27; OR &#x27;1&#x27;=&#x27;1&#x27; -- </code></td>
+<td>200</td>
+<td>No</td>
+<td>No</td>
+<td>5.98</td>
+</tr>
+<tr>
+<td>30</td>
+<td>4</td>
+<td><a href='http://localhost:8080/instructions.php?doc=%27+OR+%271%27%3D%271%27+%2F%2A' target='_blank'>http://localhost:8080/instructions.php?doc=%27+OR+%271%27%3D%271%27+%2F%2A</a></td>
+<td>doc</td>
+<td><code>&#x27; OR &#x27;1&#x27;=&#x27;1&#x27; /*</code></td>
+<td>200</td>
+<td>No</td>
+<td>No</td>
+<td>5.98</td>
+</tr>
+<tr>
+<td>30</td>
+<td>4</td>
+<td><a href='http://localhost:8080/instructions.php?doc=%22+OR+%22%22+%3D+%22' target='_blank'>http://localhost:8080/instructions.php?doc=%22+OR+%22%22+%3D+%22</a></td>
+<td>doc</td>
+<td><code>&quot; OR &quot;&quot; = &quot;</code></td>
+<td>200</td>
+<td>No</td>
+<td>No</td>
+<td>5.98</td>
+</tr>
+<tr>
+<td>30</td>
+<td>4</td>
+<td><a href='http://localhost:8080/instructions.php?doc=%27%3B--' target='_blank'>http://localhost:8080/instructions.php?doc=%27%3B--</a></td>
+<td>doc</td>
+<td><code>&#x27;;--</code></td>
+<td>200</td>
+<td>No</td>
+<td>No</td>
+<td>5.98</td>
+</tr>
+<tr>
+<td>30</td>
+<td>4</td>
+<td><a href='http://localhost:8080/instructions.php?doc=%27+OR+%27a%27%3D%27a' target='_blank'>http://localhost:8080/instructions.php?doc=%27+OR+%27a%27%3D%27a</a></td>
+<td>doc</td>
+<td><code>&#x27; OR &#x27;a&#x27;=&#x27;a</code></td>
+<td>200</td>
+<td>No</td>
+<td>No</td>
+<td>5.98</td>
+</tr>
+<tr>
+<td>22</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/sqli/' target='_blank'>http://localhost:8080/vulnerabilities/sqli/</a></td>
+<td>id</td>
+<td><code>&#x27; OR &#x27;1&#x27;=&#x27;1</code></td>
+<td>200</td>
+<td>No</td>
+<td>Yes</td>
+<td>0.08</td>
+</tr>
+<tr>
+<td>22</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/sqli/' target='_blank'>http://localhost:8080/vulnerabilities/sqli/</a></td>
+<td>ALL_FIELDS</td>
+<td><code>&#x27; OR &#x27;1&#x27;=&#x27;1</code></td>
+<td>200</td>
+<td>No</td>
+<td>Yes</td>
+<td>0.08</td>
+</tr>
+<tr>
+<td>22</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/sqli/' target='_blank'>http://localhost:8080/vulnerabilities/sqli/</a></td>
+<td>id</td>
+<td><code>&#x27; OR 1=1 -- </code></td>
+<td>200</td>
+<td>No</td>
+<td>Yes</td>
+<td>0.08</td>
+</tr>
+<tr>
+<td>22</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/sqli/' target='_blank'>http://localhost:8080/vulnerabilities/sqli/</a></td>
+<td>ALL_FIELDS</td>
+<td><code>&#x27; OR 1=1 -- </code></td>
+<td>200</td>
+<td>No</td>
+<td>Yes</td>
+<td>0.08</td>
+</tr>
+<tr>
+<td>22</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/sqli/' target='_blank'>http://localhost:8080/vulnerabilities/sqli/</a></td>
+<td>id</td>
+<td><code>&#x27; OR &#x27;1&#x27;=&#x27;1&#x27; -- </code></td>
+<td>200</td>
+<td>No</td>
+<td>Yes</td>
+<td>0.08</td>
+</tr>
+<tr>
+<td>22</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/sqli/' target='_blank'>http://localhost:8080/vulnerabilities/sqli/</a></td>
+<td>ALL_FIELDS</td>
+<td><code>&#x27; OR &#x27;1&#x27;=&#x27;1&#x27; -- </code></td>
+<td>200</td>
+<td>No</td>
+<td>Yes</td>
+<td>0.08</td>
+</tr>
+<tr>
+<td>22</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/sqli/' target='_blank'>http://localhost:8080/vulnerabilities/sqli/</a></td>
+<td>id</td>
+<td><code>&#x27; OR &#x27;a&#x27;=&#x27;a</code></td>
+<td>200</td>
+<td>No</td>
+<td>Yes</td>
+<td>0.08</td>
+</tr>
+<tr>
+<td>22</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/sqli/' target='_blank'>http://localhost:8080/vulnerabilities/sqli/</a></td>
+<td>ALL_FIELDS</td>
+<td><code>&#x27; OR &#x27;a&#x27;=&#x27;a</code></td>
+<td>200</td>
+<td>No</td>
+<td>Yes</td>
+<td>0.08</td>
+</tr>
+<tr>
+<td>20</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/xss_r/' target='_blank'>http://localhost:8080/vulnerabilities/xss_r/</a></td>
+<td>name</td>
+<td><code>&#x27; OR &#x27;1&#x27;=&#x27;1</code></td>
+<td>200</td>
+<td>No</td>
+<td>Yes</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>20</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/xss_r/' target='_blank'>http://localhost:8080/vulnerabilities/xss_r/</a></td>
+<td>ALL_FIELDS</td>
+<td><code>&#x27; OR &#x27;1&#x27;=&#x27;1</code></td>
+<td>200</td>
+<td>No</td>
+<td>Yes</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>20</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/xss_r/' target='_blank'>http://localhost:8080/vulnerabilities/xss_r/</a></td>
+<td>name</td>
+<td><code>&quot; OR &quot;1&quot;=&quot;1</code></td>
+<td>200</td>
+<td>No</td>
+<td>Yes</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>20</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/xss_r/' target='_blank'>http://localhost:8080/vulnerabilities/xss_r/</a></td>
+<td>ALL_FIELDS</td>
+<td><code>&quot; OR &quot;1&quot;=&quot;1</code></td>
+<td>200</td>
+<td>No</td>
+<td>Yes</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>20</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/xss_r/' target='_blank'>http://localhost:8080/vulnerabilities/xss_r/</a></td>
+<td>name</td>
+<td><code>&#x27; OR 1=1 -- </code></td>
+<td>200</td>
+<td>No</td>
+<td>Yes</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>20</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/xss_r/' target='_blank'>http://localhost:8080/vulnerabilities/xss_r/</a></td>
+<td>ALL_FIELDS</td>
+<td><code>&#x27; OR 1=1 -- </code></td>
+<td>200</td>
+<td>No</td>
+<td>Yes</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>20</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/xss_r/' target='_blank'>http://localhost:8080/vulnerabilities/xss_r/</a></td>
+<td>name</td>
+<td><code>&#x27; OR &#x27;1&#x27;=&#x27;1&#x27; -- </code></td>
+<td>200</td>
+<td>No</td>
+<td>Yes</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>20</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/xss_r/' target='_blank'>http://localhost:8080/vulnerabilities/xss_r/</a></td>
+<td>ALL_FIELDS</td>
+<td><code>&#x27; OR &#x27;1&#x27;=&#x27;1&#x27; -- </code></td>
+<td>200</td>
+<td>No</td>
+<td>Yes</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>20</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/xss_r/' target='_blank'>http://localhost:8080/vulnerabilities/xss_r/</a></td>
+<td>name</td>
+<td><code>&#x27; OR &#x27;1&#x27;=&#x27;1&#x27; /*</code></td>
+<td>200</td>
+<td>No</td>
+<td>Yes</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>20</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/xss_r/' target='_blank'>http://localhost:8080/vulnerabilities/xss_r/</a></td>
+<td>ALL_FIELDS</td>
+<td><code>&#x27; OR &#x27;1&#x27;=&#x27;1&#x27; /*</code></td>
+<td>200</td>
+<td>No</td>
+<td>Yes</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>20</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/xss_r/' target='_blank'>http://localhost:8080/vulnerabilities/xss_r/</a></td>
+<td>name</td>
+<td><code>&quot; OR &quot;&quot; = &quot;</code></td>
+<td>200</td>
+<td>No</td>
+<td>Yes</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>20</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/xss_r/' target='_blank'>http://localhost:8080/vulnerabilities/xss_r/</a></td>
+<td>ALL_FIELDS</td>
+<td><code>&quot; OR &quot;&quot; = &quot;</code></td>
+<td>200</td>
+<td>No</td>
+<td>Yes</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>20</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/xss_r/' target='_blank'>http://localhost:8080/vulnerabilities/xss_r/</a></td>
+<td>name</td>
+<td><code>&#x27;;--</code></td>
+<td>200</td>
+<td>No</td>
+<td>Yes</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>20</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/xss_r/' target='_blank'>http://localhost:8080/vulnerabilities/xss_r/</a></td>
+<td>ALL_FIELDS</td>
+<td><code>&#x27;;--</code></td>
+<td>200</td>
+<td>No</td>
+<td>Yes</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>20</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/xss_r/' target='_blank'>http://localhost:8080/vulnerabilities/xss_r/</a></td>
+<td>name</td>
+<td><code>&#x27; OR &#x27;a&#x27;=&#x27;a</code></td>
+<td>200</td>
+<td>No</td>
+<td>Yes</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>20</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/xss_r/' target='_blank'>http://localhost:8080/vulnerabilities/xss_r/</a></td>
+<td>ALL_FIELDS</td>
+<td><code>&#x27; OR &#x27;a&#x27;=&#x27;a</code></td>
+<td>200</td>
+<td>No</td>
+<td>Yes</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>20</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/xss_s/' target='_blank'>http://localhost:8080/vulnerabilities/xss_s/</a></td>
+<td>txtName</td>
+<td><code>&#x27; OR &#x27;1&#x27;=&#x27;1</code></td>
+<td>200</td>
+<td>No</td>
+<td>Yes</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>20</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/xss_s/' target='_blank'>http://localhost:8080/vulnerabilities/xss_s/</a></td>
+<td>mtxMessage</td>
+<td><code>&#x27; OR &#x27;1&#x27;=&#x27;1</code></td>
+<td>200</td>
+<td>No</td>
+<td>Yes</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>20</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/xss_s/' target='_blank'>http://localhost:8080/vulnerabilities/xss_s/</a></td>
+<td>ALL_FIELDS</td>
+<td><code>&#x27; OR &#x27;1&#x27;=&#x27;1</code></td>
+<td>200</td>
+<td>No</td>
+<td>Yes</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>20</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/xss_s/' target='_blank'>http://localhost:8080/vulnerabilities/xss_s/</a></td>
+<td>txtName</td>
+<td><code>&quot; OR &quot;1&quot;=&quot;1</code></td>
+<td>200</td>
+<td>No</td>
+<td>Yes</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>20</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/xss_s/' target='_blank'>http://localhost:8080/vulnerabilities/xss_s/</a></td>
+<td>mtxMessage</td>
+<td><code>&quot; OR &quot;1&quot;=&quot;1</code></td>
+<td>200</td>
+<td>No</td>
+<td>Yes</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>20</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/xss_s/' target='_blank'>http://localhost:8080/vulnerabilities/xss_s/</a></td>
+<td>ALL_FIELDS</td>
+<td><code>&quot; OR &quot;1&quot;=&quot;1</code></td>
+<td>200</td>
+<td>No</td>
+<td>Yes</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>20</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/xss_s/' target='_blank'>http://localhost:8080/vulnerabilities/xss_s/</a></td>
+<td>txtName</td>
+<td><code>&#x27; OR 1=1 -- </code></td>
+<td>200</td>
+<td>No</td>
+<td>Yes</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>20</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/xss_s/' target='_blank'>http://localhost:8080/vulnerabilities/xss_s/</a></td>
+<td>mtxMessage</td>
+<td><code>&#x27; OR 1=1 -- </code></td>
+<td>200</td>
+<td>No</td>
+<td>Yes</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>20</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/xss_s/' target='_blank'>http://localhost:8080/vulnerabilities/xss_s/</a></td>
+<td>ALL_FIELDS</td>
+<td><code>&#x27; OR 1=1 -- </code></td>
+<td>200</td>
+<td>No</td>
+<td>Yes</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>20</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/xss_s/' target='_blank'>http://localhost:8080/vulnerabilities/xss_s/</a></td>
+<td>txtName</td>
+<td><code>&#x27; OR &#x27;1&#x27;=&#x27;1&#x27; -- </code></td>
+<td>200</td>
+<td>No</td>
+<td>Yes</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>20</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/xss_s/' target='_blank'>http://localhost:8080/vulnerabilities/xss_s/</a></td>
+<td>mtxMessage</td>
+<td><code>&#x27; OR &#x27;1&#x27;=&#x27;1&#x27; -- </code></td>
+<td>200</td>
+<td>No</td>
+<td>Yes</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>20</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/xss_s/' target='_blank'>http://localhost:8080/vulnerabilities/xss_s/</a></td>
+<td>ALL_FIELDS</td>
+<td><code>&#x27; OR &#x27;1&#x27;=&#x27;1&#x27; -- </code></td>
+<td>200</td>
+<td>No</td>
+<td>Yes</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>20</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/xss_s/' target='_blank'>http://localhost:8080/vulnerabilities/xss_s/</a></td>
+<td>txtName</td>
+<td><code>&#x27; OR &#x27;1&#x27;=&#x27;1&#x27; /*</code></td>
+<td>200</td>
+<td>No</td>
+<td>Yes</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>20</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/xss_s/' target='_blank'>http://localhost:8080/vulnerabilities/xss_s/</a></td>
+<td>mtxMessage</td>
+<td><code>&#x27; OR &#x27;1&#x27;=&#x27;1&#x27; /*</code></td>
+<td>200</td>
+<td>No</td>
+<td>Yes</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>20</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/xss_s/' target='_blank'>http://localhost:8080/vulnerabilities/xss_s/</a></td>
+<td>ALL_FIELDS</td>
+<td><code>&#x27; OR &#x27;1&#x27;=&#x27;1&#x27; /*</code></td>
+<td>200</td>
+<td>No</td>
+<td>Yes</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>20</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/xss_s/' target='_blank'>http://localhost:8080/vulnerabilities/xss_s/</a></td>
+<td>txtName</td>
+<td><code>&quot; OR &quot;&quot; = &quot;</code></td>
+<td>200</td>
+<td>No</td>
+<td>Yes</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>20</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/xss_s/' target='_blank'>http://localhost:8080/vulnerabilities/xss_s/</a></td>
+<td>mtxMessage</td>
+<td><code>&quot; OR &quot;&quot; = &quot;</code></td>
+<td>200</td>
+<td>No</td>
+<td>Yes</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>20</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/xss_s/' target='_blank'>http://localhost:8080/vulnerabilities/xss_s/</a></td>
+<td>ALL_FIELDS</td>
+<td><code>&quot; OR &quot;&quot; = &quot;</code></td>
+<td>200</td>
+<td>No</td>
+<td>Yes</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>20</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/xss_s/' target='_blank'>http://localhost:8080/vulnerabilities/xss_s/</a></td>
+<td>txtName</td>
+<td><code>&#x27;;--</code></td>
+<td>200</td>
+<td>No</td>
+<td>Yes</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>20</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/xss_s/' target='_blank'>http://localhost:8080/vulnerabilities/xss_s/</a></td>
+<td>mtxMessage</td>
+<td><code>&#x27;;--</code></td>
+<td>200</td>
+<td>No</td>
+<td>Yes</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>20</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/xss_s/' target='_blank'>http://localhost:8080/vulnerabilities/xss_s/</a></td>
+<td>ALL_FIELDS</td>
+<td><code>&#x27;;--</code></td>
+<td>200</td>
+<td>No</td>
+<td>Yes</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>20</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/xss_s/' target='_blank'>http://localhost:8080/vulnerabilities/xss_s/</a></td>
+<td>txtName</td>
+<td><code>&#x27; OR &#x27;a&#x27;=&#x27;a</code></td>
+<td>200</td>
+<td>No</td>
+<td>Yes</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>20</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/xss_s/' target='_blank'>http://localhost:8080/vulnerabilities/xss_s/</a></td>
+<td>mtxMessage</td>
+<td><code>&#x27; OR &#x27;a&#x27;=&#x27;a</code></td>
+<td>200</td>
+<td>No</td>
+<td>Yes</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>20</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/xss_s/' target='_blank'>http://localhost:8080/vulnerabilities/xss_s/</a></td>
+<td>ALL_FIELDS</td>
+<td><code>&#x27; OR &#x27;a&#x27;=&#x27;a</code></td>
+<td>200</td>
+<td>No</td>
+<td>Yes</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>20</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/csp/' target='_blank'>http://localhost:8080/vulnerabilities/csp/</a></td>
+<td>include</td>
+<td><code>&#x27; OR &#x27;1&#x27;=&#x27;1</code></td>
+<td>200</td>
+<td>No</td>
+<td>Yes</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>20</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/csp/' target='_blank'>http://localhost:8080/vulnerabilities/csp/</a></td>
+<td>ALL_FIELDS</td>
+<td><code>&#x27; OR &#x27;1&#x27;=&#x27;1</code></td>
+<td>200</td>
+<td>No</td>
+<td>Yes</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>20</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/csp/' target='_blank'>http://localhost:8080/vulnerabilities/csp/</a></td>
+<td>include</td>
+<td><code>&quot; OR &quot;1&quot;=&quot;1</code></td>
+<td>200</td>
+<td>No</td>
+<td>Yes</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>20</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/csp/' target='_blank'>http://localhost:8080/vulnerabilities/csp/</a></td>
+<td>ALL_FIELDS</td>
+<td><code>&quot; OR &quot;1&quot;=&quot;1</code></td>
+<td>200</td>
+<td>No</td>
+<td>Yes</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>20</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/csp/' target='_blank'>http://localhost:8080/vulnerabilities/csp/</a></td>
+<td>include</td>
+<td><code>&#x27; OR 1=1 -- </code></td>
+<td>200</td>
+<td>No</td>
+<td>Yes</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>20</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/csp/' target='_blank'>http://localhost:8080/vulnerabilities/csp/</a></td>
+<td>ALL_FIELDS</td>
+<td><code>&#x27; OR 1=1 -- </code></td>
+<td>200</td>
+<td>No</td>
+<td>Yes</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>20</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/csp/' target='_blank'>http://localhost:8080/vulnerabilities/csp/</a></td>
+<td>include</td>
+<td><code>&#x27; OR &#x27;1&#x27;=&#x27;1&#x27; -- </code></td>
+<td>200</td>
+<td>No</td>
+<td>Yes</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>20</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/csp/' target='_blank'>http://localhost:8080/vulnerabilities/csp/</a></td>
+<td>ALL_FIELDS</td>
+<td><code>&#x27; OR &#x27;1&#x27;=&#x27;1&#x27; -- </code></td>
+<td>200</td>
+<td>No</td>
+<td>Yes</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>20</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/csp/' target='_blank'>http://localhost:8080/vulnerabilities/csp/</a></td>
+<td>include</td>
+<td><code>&#x27; OR &#x27;1&#x27;=&#x27;1&#x27; /*</code></td>
+<td>200</td>
+<td>No</td>
+<td>Yes</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>20</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/csp/' target='_blank'>http://localhost:8080/vulnerabilities/csp/</a></td>
+<td>ALL_FIELDS</td>
+<td><code>&#x27; OR &#x27;1&#x27;=&#x27;1&#x27; /*</code></td>
+<td>200</td>
+<td>No</td>
+<td>Yes</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>20</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/csp/' target='_blank'>http://localhost:8080/vulnerabilities/csp/</a></td>
+<td>include</td>
+<td><code>&quot; OR &quot;&quot; = &quot;</code></td>
+<td>200</td>
+<td>No</td>
+<td>Yes</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>20</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/csp/' target='_blank'>http://localhost:8080/vulnerabilities/csp/</a></td>
+<td>ALL_FIELDS</td>
+<td><code>&quot; OR &quot;&quot; = &quot;</code></td>
+<td>200</td>
+<td>No</td>
+<td>Yes</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>20</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/csp/' target='_blank'>http://localhost:8080/vulnerabilities/csp/</a></td>
+<td>include</td>
+<td><code>&#x27;;--</code></td>
+<td>200</td>
+<td>No</td>
+<td>Yes</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>20</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/csp/' target='_blank'>http://localhost:8080/vulnerabilities/csp/</a></td>
+<td>ALL_FIELDS</td>
+<td><code>&#x27;;--</code></td>
+<td>200</td>
+<td>No</td>
+<td>Yes</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>20</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/csp/' target='_blank'>http://localhost:8080/vulnerabilities/csp/</a></td>
+<td>include</td>
+<td><code>&#x27; OR &#x27;a&#x27;=&#x27;a</code></td>
+<td>200</td>
+<td>No</td>
+<td>Yes</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>20</td>
+<td>1</td>
+<td><a href='http://localhost:8080/vulnerabilities/csp/' target='_blank'>http://localhost:8080/vulnerabilities/csp/</a></td>
+<td>ALL_FIELDS</td>
+<td><code>&#x27; OR &#x27;a&#x27;=&#x27;a</code></td>
+<td>200</td>
+<td>No</td>
+<td>Yes</td>
+<td>0.00</td>
+</tr>
+</table>
+<hr><h3>Suggested Fixes</h3><ul>
+<li>Use parameterized queries / prepared statements.</li>
+<li>Validate and sanitize input; enforce allow-lists and lengths.</li>
+<li>Apply least-privilege DB accounts (no DROP/ALTER for web app user).</li>
+<li>Never show raw DB errors to users; log them server-side.</li>
+</ul></body></html>

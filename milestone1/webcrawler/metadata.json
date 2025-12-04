@@ -1,0 +1,29 @@
+[
+  {
+    "url": "http://localhost:8080/",
+    "forms": [
+      {
+        "action": "login.php",
+        "method": "post",
+        "inputs": [
+          {
+            "name": "username",
+            "type": "text"
+          },
+          {
+            "name": "password",
+            "type": "password"
+          },
+          {
+            "name": "Login",
+            "type": "submit"
+          },
+          {
+            "name": "user_token",
+            "type": "hidden"
+          }
+        ]
+      }
+    ]
+  }
+]

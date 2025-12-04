@@ -1,0 +1,66 @@
+{
+  "findings": [
+    {
+      "test": "default_credentials",
+      "username": "admin",
+      "password": "password",
+      "success": true,
+      "status_code": 200
+    },
+    {
+      "test": "default_credentials",
+      "username": "admin",
+      "password": "admin",
+      "success": true,
+      "status_code": 200
+    },
+    {
+      "test": "default_credentials",
+      "username": "root",
+      "password": "root",
+      "success": true,
+      "status_code": 200
+    },
+    {
+      "test": "default_credentials",
+      "username": "test",
+      "password": "test",
+      "success": true,
+      "status_code": 200
+    },
+    {
+      "test": "brute_force_simulation",
+      "username": "admin",
+      "password_tried": "password",
+      "success": true,
+      "status_code": 200
+    },
+    {
+      "test": "cookie_flags",
+      "cookies": []
+    },
+    {
+      "test": "session_fixation",
+      "cookie_name": "PHPSESSID",
+      "pre_login_value": "FIXATION_TEST_12345",
+      "post_login_value": "FIXATION_TEST_12345",
+      "vulnerable": true
+    },
+    {
+      "test": "session_hijack",
+      "cookie_name": "PHPSESSID",
+      "cookie_value": "h1rps4ai6iui7tr2osa0falr07",
+      "attacker_access_success": true,
+      "status_code": 200
+    }
+  ],
+  "recommendations": {
+    "use_https": "Serve auth pages and cookies over HTTPS (TLS).",
+    "secure_cookie_flags": "Set Secure; HttpOnly; SameSite=strict or Lax on session cookies.",
+    "session_regeneration": "Regenerate session identifier after login (prevent fixation).",
+    "rate_limit": "Apply rate limiting and exponential backoff on failed auth attempts.",
+    "account_lockout": "Implement progressive lockouts or CAPTCHA after repeated failures.",
+    "mfa": "Provide multi-factor authentication for sensitive accounts.",
+    "bind_session": "Consider binding sessions to additional attributes (IP/UA) cautiously."
+  }
+}

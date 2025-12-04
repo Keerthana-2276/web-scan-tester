@@ -1,0 +1,82 @@
+{
+  "findings": [
+    {
+      "test": "default_credentials",
+      "url": "http://localhost:8080/login.php",
+      "username": "admin",
+      "password": "password",
+      "success": true,
+      "status_code": 200
+    },
+    {
+      "test": "default_credentials",
+      "url": "http://localhost:8080/login.php",
+      "username": "admin",
+      "password": "admin",
+      "success": true,
+      "status_code": 200
+    },
+    {
+      "test": "default_credentials",
+      "url": "http://localhost:8080/login.php",
+      "username": "root",
+      "password": "root",
+      "success": true,
+      "status_code": 200
+    },
+    {
+      "test": "default_credentials",
+      "url": "http://localhost:8080/login.php",
+      "username": "test",
+      "password": "test",
+      "success": true,
+      "status_code": 200
+    },
+    {
+      "test": "brute_force_simulation",
+      "url": "http://localhost:8080/login.php",
+      "username": "admin",
+      "password_tried": "password",
+      "success": true,
+      "status_code": 200
+    },
+    {
+      "test": "cookie_flags",
+      "url": "http://localhost:8080",
+      "cookies": [
+        {
+          "header": "",
+          "name": "",
+          "has_secure": false,
+          "has_httponly": false,
+          "same_site": null
+        }
+      ]
+    },
+    {
+      "test": "session_fixation",
+      "url": "http://localhost:8080/login.php",
+      "cookie_name": "PHPSESSID",
+      "pre_login_value": "FIXATION_TEST_12345",
+      "post_login_value": "FIXATION_TEST_12345",
+      "vulnerable": true
+    },
+    {
+      "test": "session_hijack",
+      "url": "http://localhost:8080/vulnerabilities/sqli/",
+      "cookie_name": "PHPSESSID",
+      "cookie_value": "3o8qmu90pl2a7fie9shq1esfn0",
+      "attacker_access_success": true,
+      "status_code": 200
+    }
+  ],
+  "recommendations": {
+    "use_https": "Serve auth pages and cookies over HTTPS.",
+    "secure_cookie_flags": "Set Secure; HttpOnly; SameSite=strict or Lax on session cookies.",
+    "session_regeneration": "Regenerate session ID after login.",
+    "rate_limit": "Apply rate limiting/backoff on failed authentication attempts.",
+    "account_lockout": "Enable progressive lockouts or CAPTCHA.",
+    "mfa": "Enable multi-factor authentication.",
+    "bind_session": "Bind session to additional factors (IP/UA) carefully."
+  }
+}

@@ -1,0 +1,552 @@
+[
+  {
+    "url": "http://localhost:8080/vulnerabilities/sqli/",
+    "forms": [
+      {
+        "action": "#",
+        "method": "GET",
+        "inputs": [
+          {
+            "name": "id",
+            "type": "text"
+          },
+          {
+            "name": "Submit",
+            "type": "submit"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "url": "http://localhost:8080/",
+    "forms": []
+  },
+  {
+    "url": "http://localhost:8080/instructions.php",
+    "forms": []
+  },
+  {
+    "url": "http://localhost:8080/setup.php",
+    "forms": [
+      {
+        "action": "#",
+        "method": "post",
+        "inputs": [
+          {
+            "name": "create_db",
+            "type": "submit"
+          },
+          {
+            "name": "user_token",
+            "type": "hidden"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "url": "http://localhost:8080/vulnerabilities/brute/",
+    "forms": [
+      {
+        "action": "#",
+        "method": "GET",
+        "inputs": [
+          {
+            "name": "username",
+            "type": "text"
+          },
+          {
+            "name": "password",
+            "type": "password"
+          },
+          {
+            "name": "Login",
+            "type": "submit"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "url": "http://localhost:8080/vulnerabilities/exec/",
+    "forms": [
+      {
+        "action": "#",
+        "method": "post",
+        "inputs": [
+          {
+            "name": "ip",
+            "type": "text"
+          },
+          {
+            "name": "Submit",
+            "type": "submit"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "url": "http://localhost:8080/vulnerabilities/csrf/",
+    "forms": [
+      {
+        "action": "#",
+        "method": "GET",
+        "inputs": [
+          {
+            "name": "password_new",
+            "type": "password"
+          },
+          {
+            "name": "password_conf",
+            "type": "password"
+          },
+          {
+            "name": "Change",
+            "type": "submit"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "url": "http://localhost:8080/vulnerabilities/fi/?page=include.php",
+    "forms": []
+  },
+  {
+    "url": "http://localhost:8080/vulnerabilities/upload/",
+    "forms": [
+      {
+        "action": "#",
+        "method": "POST",
+        "inputs": [
+          {
+            "name": "MAX_FILE_SIZE",
+            "type": "hidden"
+          },
+          {
+            "name": "uploaded",
+            "type": "file"
+          },
+          {
+            "name": "Upload",
+            "type": "submit"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "url": "http://localhost:8080/vulnerabilities/captcha/",
+    "forms": [
+      {
+        "action": "#",
+        "method": "POST",
+        "inputs": [
+          {
+            "name": "step",
+            "type": "hidden"
+          },
+          {
+            "name": "password_new",
+            "type": "password"
+          },
+          {
+            "name": "password_conf",
+            "type": "password"
+          },
+          {
+            "name": "Change",
+            "type": "submit"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "url": "http://localhost:8080/vulnerabilities/sqli_blind/",
+    "forms": [
+      {
+        "action": "#",
+        "method": "GET",
+        "inputs": [
+          {
+            "name": "id",
+            "type": "text"
+          },
+          {
+            "name": "Submit",
+            "type": "submit"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "url": "http://localhost:8080/vulnerabilities/weak_id/",
+    "forms": [
+      {
+        "action": null,
+        "method": "post",
+        "inputs": [
+          {
+            "name": null,
+            "type": "submit"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "url": "http://localhost:8080/vulnerabilities/xss_d/",
+    "forms": [
+      {
+        "action": null,
+        "method": "GET",
+        "inputs": [
+          {
+            "name": "default",
+            "type": null
+          },
+          {
+            "name": null,
+            "type": "submit"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "url": "http://localhost:8080/vulnerabilities/xss_r/",
+    "forms": [
+      {
+        "action": "#",
+        "method": "GET",
+        "inputs": [
+          {
+            "name": "name",
+            "type": "text"
+          },
+          {
+            "name": null,
+            "type": "submit"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "url": "http://localhost:8080/vulnerabilities/xss_s/",
+    "forms": [
+      {
+        "action": null,
+        "method": "post",
+        "inputs": [
+          {
+            "name": "txtName",
+            "type": "text"
+          },
+          {
+            "name": "mtxMessage",
+            "type": null
+          },
+          {
+            "name": "btnSign",
+            "type": "submit"
+          },
+          {
+            "name": "btnClear",
+            "type": "submit"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "url": "http://localhost:8080/vulnerabilities/csp/",
+    "forms": [
+      {
+        "action": null,
+        "method": "POST",
+        "inputs": [
+          {
+            "name": "include",
+            "type": "text"
+          },
+          {
+            "name": null,
+            "type": "submit"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "url": "http://localhost:8080/vulnerabilities/javascript/",
+    "forms": [
+      {
+        "action": null,
+        "method": "post",
+        "inputs": [
+          {
+            "name": "token",
+            "type": "hidden"
+          },
+          {
+            "name": "phrase",
+            "type": "text"
+          },
+          {
+            "name": "send",
+            "type": "submit"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "url": "http://localhost:8080/security.php",
+    "forms": [
+      {
+        "action": "#",
+        "method": "POST",
+        "inputs": [
+          {
+            "name": "security",
+            "type": null
+          },
+          {
+            "name": "seclev_submit",
+            "type": "submit"
+          },
+          {
+            "name": "user_token",
+            "type": "hidden"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "url": "http://localhost:8080/phpinfo.php",
+    "forms": []
+  },
+  {
+    "url": "http://localhost:8080/about.php",
+    "forms": []
+  },
+  {
+    "url": "http://localhost:8080/logout.php",
+    "forms": [
+      {
+        "action": "login.php",
+        "method": "post",
+        "inputs": [
+          {
+            "name": "username",
+            "type": "text"
+          },
+          {
+            "name": "password",
+            "type": "password"
+          },
+          {
+            "name": "Login",
+            "type": "submit"
+          },
+          {
+            "name": "user_token",
+            "type": "hidden"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "url": "http://localhost:8080/docs/DVWA_v1.3.pdf",
+    "forms": []
+  },
+  {
+    "url": "http://localhost:8080/instructions.php?doc=PHPIDS-license",
+    "forms": []
+  },
+  {
+    "url": "http://localhost:8080/instructions.php?doc=readme",
+    "forms": []
+  },
+  {
+    "url": "http://localhost:8080/instructions.php?doc=PDF",
+    "forms": []
+  },
+  {
+    "url": "http://localhost:8080/instructions.php?doc=changelog",
+    "forms": []
+  },
+  {
+    "url": "http://localhost:8080/instructions.php?doc=copying",
+    "forms": []
+  },
+  {
+    "url": "http://localhost:8080/security.php?phpids=on",
+    "forms": [
+      {
+        "action": "login.php",
+        "method": "post",
+        "inputs": [
+          {
+            "name": "username",
+            "type": "text"
+          },
+          {
+            "name": "password",
+            "type": "password"
+          },
+          {
+            "name": "Login",
+            "type": "submit"
+          },
+          {
+            "name": "user_token",
+            "type": "hidden"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "url": "http://localhost:8080/security.php?test=%22><script>eval(window.name)</script>",
+    "forms": [
+      {
+        "action": "login.php",
+        "method": "post",
+        "inputs": [
+          {
+            "name": "username",
+            "type": "text"
+          },
+          {
+            "name": "password",
+            "type": "password"
+          },
+          {
+            "name": "Login",
+            "type": "submit"
+          },
+          {
+            "name": "user_token",
+            "type": "hidden"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "url": "http://localhost:8080/ids_log.php",
+    "forms": [
+      {
+        "action": "login.php",
+        "method": "post",
+        "inputs": [
+          {
+            "name": "username",
+            "type": "text"
+          },
+          {
+            "name": "password",
+            "type": "password"
+          },
+          {
+            "name": "Login",
+            "type": "submit"
+          },
+          {
+            "name": "user_token",
+            "type": "hidden"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "url": "http://localhost:8080/vulnerabilities/fi/?page=file1.php",
+    "forms": [
+      {
+        "action": "login.php",
+        "method": "post",
+        "inputs": [
+          {
+            "name": "username",
+            "type": "text"
+          },
+          {
+            "name": "password",
+            "type": "password"
+          },
+          {
+            "name": "Login",
+            "type": "submit"
+          },
+          {
+            "name": "user_token",
+            "type": "hidden"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "url": "http://localhost:8080/vulnerabilities/fi/?page=file2.php",
+    "forms": [
+      {
+        "action": "login.php",
+        "method": "post",
+        "inputs": [
+          {
+            "name": "username",
+            "type": "text"
+          },
+          {
+            "name": "password",
+            "type": "password"
+          },
+          {
+            "name": "Login",
+            "type": "submit"
+          },
+          {
+            "name": "user_token",
+            "type": "hidden"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "url": "http://localhost:8080/vulnerabilities/fi/?page=file3.php",
+    "forms": [
+      {
+        "action": "login.php",
+        "method": "post",
+        "inputs": [
+          {
+            "name": "username",
+            "type": "text"
+          },
+          {
+            "name": "password",
+            "type": "password"
+          },
+          {
+            "name": "Login",
+            "type": "submit"
+          },
+          {
+            "name": "user_token",
+            "type": "hidden"
+          }
+        ]
+      }
+    ]
+  }
+]

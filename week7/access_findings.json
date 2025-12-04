@@ -1,0 +1,116 @@
+{
+  "findings": [
+    {
+      "test": "Access Control / IDOR",
+      "url": "http://localhost:8080/vulnerabilities/weak_id/?id=999999",
+      "param": "id",
+      "details": {
+        "type": "idor_big_id_accessible",
+        "tested_url": "http://localhost:8080/vulnerabilities/weak_id/?id=999999",
+        "param": "id",
+        "tested_value": "999999",
+        "status_code": 200
+      },
+      "vulnerable": true
+    },
+    {
+      "test": "Access Control / IDOR",
+      "url": "http://localhost:8080/vulnerabilities/weak_id/?id=1000000",
+      "param": "id",
+      "details": {
+        "type": "idor_big_id_accessible",
+        "tested_url": "http://localhost:8080/vulnerabilities/weak_id/?id=1000000",
+        "param": "id",
+        "tested_value": "1000000",
+        "status_code": 200
+      },
+      "vulnerable": true
+    },
+    {
+      "test": "Access Control / IDOR",
+      "url": "http://localhost:8080/vulnerabilities/weak_id/?id=999999",
+      "param": "id",
+      "details": {
+        "type": "idor_big_id_accessible",
+        "tested_url": "http://localhost:8080/vulnerabilities/weak_id/?id=999999",
+        "param": "id",
+        "tested_value": "999999",
+        "status_code": 200
+      },
+      "vulnerable": true
+    },
+    {
+      "test": "Access Control / IDOR",
+      "url": "http://localhost:8080/vulnerabilities/weak_id/?id=1000000",
+      "param": "id",
+      "details": {
+        "type": "idor_big_id_accessible",
+        "tested_url": "http://localhost:8080/vulnerabilities/weak_id/?id=1000000",
+        "param": "id",
+        "tested_value": "1000000",
+        "status_code": 200
+      },
+      "vulnerable": true
+    },
+    {
+      "test": "Access Control / IDOR",
+      "url": "http://localhost:8080/vulnerabilities/weak_id/?id=999999",
+      "param": "id",
+      "details": {
+        "type": "idor_big_id_accessible",
+        "tested_url": "http://localhost:8080/vulnerabilities/weak_id/?id=999999",
+        "param": "id",
+        "tested_value": "999999",
+        "status_code": 200
+      },
+      "vulnerable": true
+    },
+    {
+      "test": "Access Control / IDOR",
+      "url": "http://localhost:8080/vulnerabilities/weak_id/?id=1000000",
+      "param": "id",
+      "details": {
+        "type": "idor_big_id_accessible",
+        "tested_url": "http://localhost:8080/vulnerabilities/weak_id/?id=1000000",
+        "param": "id",
+        "tested_value": "1000000",
+        "status_code": 200
+      },
+      "vulnerable": true
+    },
+    {
+      "test": "Access Control / IDOR",
+      "url": "http://localhost:8080/vulnerabilities/weak_id/?id=999999",
+      "param": "id",
+      "details": {
+        "type": "idor_big_id_accessible",
+        "tested_url": "http://localhost:8080/vulnerabilities/weak_id/?id=999999",
+        "param": "id",
+        "tested_value": "999999",
+        "status_code": 200
+      },
+      "vulnerable": true
+    },
+    {
+      "test": "Access Control / IDOR",
+      "url": "http://localhost:8080/vulnerabilities/weak_id/?id=1000000",
+      "param": "id",
+      "details": {
+        "type": "idor_big_id_accessible",
+        "tested_url": "http://localhost:8080/vulnerabilities/weak_id/?id=1000000",
+        "param": "id",
+        "tested_value": "1000000",
+        "status_code": 200
+      },
+      "vulnerable": true
+    }
+  ],
+  "suggested_fixes": {
+    "enforce_server_side_authorization": "Always enforce authorization on server-side before returning object data.",
+    "use_id_mapping_or_random_ids": "Use UUIDs, GUIDs, or hashids instead of sequential IDs.",
+    "implement_rbac_or_abac": "Use RBAC/ABAC to restrict access to user roles.",
+    "least_privilege": "Restrict privileges to only what is necessary.",
+    "audit_logging": "Log access attempts and detect unusual patterns.",
+    "test_and_review": "Include authorization tests in QA and CI automation."
+  }
+}

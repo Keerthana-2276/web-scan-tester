@@ -1,0 +1,131 @@
+{
+  "sql_findings": [
+    {
+      "action_url": "http://localhost:8080/vulnerabilities/sqli/",
+      "method": "get",
+      "injected_field": "id",
+      "payload": "' OR '1'='1",
+      "error_found": false,
+      "reflected": true,
+      "rel_length_change": 0.07635632953784327,
+      "status_code": 200
+    },
+    {
+      "action_url": "http://localhost:8080/vulnerabilities/sqli/",
+      "method": "get",
+      "injected_field": "ALL_FIELDS",
+      "payload": "' OR '1'='1",
+      "error_found": false,
+      "reflected": true,
+      "rel_length_change": 0.07635632953784327,
+      "status_code": 200
+    },
+    {
+      "action_url": "http://localhost:8080/vulnerabilities/sqli/",
+      "method": "get",
+      "injected_field": "id",
+      "payload": "' OR 1=1 -- ",
+      "error_found": false,
+      "reflected": true,
+      "rel_length_change": 0.07747265014512168,
+      "status_code": 200
+    },
+    {
+      "action_url": "http://localhost:8080/vulnerabilities/sqli/",
+      "method": "get",
+      "injected_field": "ALL_FIELDS",
+      "payload": "' OR 1=1 -- ",
+      "error_found": false,
+      "reflected": true,
+      "rel_length_change": 0.07747265014512168,
+      "status_code": 200
+    },
+    {
+      "action_url": "http://localhost:8080/vulnerabilities/sqli/",
+      "method": "get",
+      "injected_field": "id",
+      "payload": "' OR '1'='1' -- ",
+      "error_found": false,
+      "reflected": true,
+      "rel_length_change": 0.08193793257423532,
+      "status_code": 200
+    },
+    {
+      "action_url": "http://localhost:8080/vulnerabilities/sqli/",
+      "method": "get",
+      "injected_field": "ALL_FIELDS",
+      "payload": "' OR '1'='1' -- ",
+      "error_found": false,
+      "reflected": true,
+      "rel_length_change": 0.08193793257423532,
+      "status_code": 200
+    },
+    {
+      "action_url": "http://localhost:8080/vulnerabilities/sqli/",
+      "method": "get",
+      "injected_field": "id",
+      "payload": "' OR '1'='1' /*",
+      "error_found": true,
+      "reflected": false,
+      "rel_length_change": 0.9638312123241795,
+      "status_code": 200
+    },
+    {
+      "action_url": "http://localhost:8080/vulnerabilities/sqli/",
+      "method": "get",
+      "injected_field": "ALL_FIELDS",
+      "payload": "' OR '1'='1' /*",
+      "error_found": true,
+      "reflected": false,
+      "rel_length_change": 0.9638312123241795,
+      "status_code": 200
+    },
+    {
+      "action_url": "http://localhost:8080/vulnerabilities/sqli/",
+      "method": "get",
+      "injected_field": "id",
+      "payload": "';--",
+      "error_found": true,
+      "reflected": false,
+      "rel_length_change": 0.9638312123241795,
+      "status_code": 200
+    },
+    {
+      "action_url": "http://localhost:8080/vulnerabilities/sqli/",
+      "method": "get",
+      "injected_field": "ALL_FIELDS",
+      "payload": "';--",
+      "error_found": true,
+      "reflected": false,
+      "rel_length_change": 0.9638312123241795,
+      "status_code": 200
+    },
+    {
+      "action_url": "http://localhost:8080/vulnerabilities/sqli/",
+      "method": "get",
+      "injected_field": "id",
+      "payload": "' OR 'a'='a",
+      "error_found": false,
+      "reflected": true,
+      "rel_length_change": 0.07635632953784327,
+      "status_code": 200
+    },
+    {
+      "action_url": "http://localhost:8080/vulnerabilities/sqli/",
+      "method": "get",
+      "injected_field": "ALL_FIELDS",
+      "payload": "' OR 'a'='a",
+      "error_found": false,
+      "reflected": true,
+      "rel_length_change": 0.07635632953784327,
+      "status_code": 200
+    }
+  ],
+  "suggested_fixes": {
+    "parameterized_queries": "Use prepared statements / parameterized queries. Do not concatenate user input into SQL.",
+    "input_validation": "Validate and sanitize inputs by type and length. Use allow-lists where possible.",
+    "least_privilege": "Ensure the DB account used by the app has only necessary privileges.",
+    "error_handling": "Do not display raw SQL errors to users; log them server-side instead.",
+    "use_orm_or_safe_api": "Consider using an ORM or database API that defaults to parameterized queries."
+  }
+}
